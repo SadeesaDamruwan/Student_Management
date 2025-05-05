@@ -212,6 +212,7 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(label1);
+            ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
             Name = "Reg";
             StartPosition = FormStartPosition.CenterScreen;

@@ -119,6 +119,7 @@
             resources.ApplyResources(txtUsername, "txtUsername");
             txtUsername.ForeColor = Color.FromArgb(0, 117, 214);
             txtUsername.Name = "txtUsername";
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // txtpass
             // 

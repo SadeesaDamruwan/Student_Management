@@ -35,3 +35,5 @@ C:\Users\user\source\repos\Student_man\Student_man\bin\Debug\net8.0-windows\runt
 C:\Users\user\source\repos\Student_man\Student_man\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\user\source\repos\Student_man\Student_man\obj\Debug\net8.0-windows\Student_man.csproj.AssemblyReference.cache
 C:\Users\user\source\repos\Student_man\Student_man\obj\Debug\net8.0-windows\Student_.D1300B67.Up2Date
+C:\Users\user\source\repos\Student_man\Student_man\obj\Debug\net8.0-windows\Student_man.UserType.resources
+C:\Users\user\source\repos\Student_man\Student_man\obj\Debug\net8.0-windows\Student_man.mycouses.resources

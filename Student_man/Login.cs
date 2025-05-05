@@ -51,14 +51,14 @@ namespace Student_man
             String conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
             MySqlConnection con = new MySqlConnection(conString);
             con.Open();
-            string Query = "select Password from lms.Register where UserName = '" + username +"'";
+            string Query = "select Password from lms.Register where UserName = '" + username + "'";
             MySqlCommand cmd = new MySqlCommand(Query, con);
             MySqlDataReader reader = cmd.ExecuteReader();
 
 
             if (reader.Read())
             {
-                if(reader.GetString(0) == password)
+                if (reader.GetString(0) == password)
                 {
                     MessageBox.Show("Login Successful");
                     this.Hide();
@@ -75,6 +75,7 @@ namespace Student_man
             {
                 MessageBox.Show("Username or Password does not exist");
             }
+
 
         }
 
@@ -95,6 +96,11 @@ namespace Student_man
             this.Hide();
             Reg main = new Reg();
             main.Show();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic.Logging;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,30 +10,32 @@ using System.Windows.Forms;
 
 namespace Student_man
 {
-    public partial class Createacc : Form
+    public partial class UserType : Form
     {
-        public Createacc()
+        public UserType()
         {
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnuse_Click(object sender, EventArgs e)
         {
             this.Hide();
             Login main = new Login();
             main.Show();
         }
 
-        private void btncouse_Click(object sender, EventArgs e)
+        private void btnad_Click(object sender, EventArgs e)
         {
             this.Hide();
-            mycouses main = new mycouses();
+            Login main = new Login();
             main.Show();
         }
 
-        private void lblExit_Click(object sender, EventArgs e)
+        private void btnstaff_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Login main = new Login();
+            main.Show();
         }
     }
 }
