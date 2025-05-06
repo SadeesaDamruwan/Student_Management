@@ -35,7 +35,7 @@
             label6 = new Label();
             comdgree = new ComboBox();
             label4 = new Label();
-            button3 = new Button();
+            btnsave = new Button();
             lblExit = new Label();
             cmbmodule1 = new ComboBox();
             cmbmodule2 = new ComboBox();
@@ -125,19 +125,19 @@
             label4.Text = "Module4";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // btnsave
             // 
-            button3.BackColor = Color.FromArgb(0, 117, 214);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Bahnschrift SemiBold SemiConden", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(22, 367);
-            button3.Name = "button3";
-            button3.Size = new Size(246, 40);
-            button3.TabIndex = 6;
-            button3.Text = "Save";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            btnsave.BackColor = Color.FromArgb(0, 117, 214);
+            btnsave.FlatStyle = FlatStyle.Flat;
+            btnsave.Font = new Font("Bahnschrift SemiBold SemiConden", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnsave.ForeColor = Color.White;
+            btnsave.Location = new Point(22, 367);
+            btnsave.Name = "btnsave";
+            btnsave.Size = new Size(246, 40);
+            btnsave.TabIndex = 6;
+            btnsave.Text = "Save";
+            btnsave.UseVisualStyleBackColor = false;
+            btnsave.Click += button3_Click;
             // 
             // lblExit
             // 
@@ -155,7 +155,7 @@
             // cmbmodule1
             // 
             cmbmodule1.FormattingEnabled = true;
-            cmbmodule1.Items.AddRange(new object[] { "", "Introduction to Computer Science", "Mathematics for Computing" });
+            cmbmodule1.Items.AddRange(new object[] { "Introduction to Computer Science", "Mathematics for Computing" });
             cmbmodule1.Location = new Point(120, 174);
             cmbmodule1.Name = "cmbmodule1";
             cmbmodule1.Size = new Size(160, 23);
@@ -175,7 +175,7 @@
             // cmbmodule3
             // 
             cmbmodule3.FormattingEnabled = true;
-            cmbmodule3.Items.AddRange(new object[] { "Object Oriented Programming with Java", "", "Human-Computer Interaction\t" });
+            cmbmodule3.Items.AddRange(new object[] { "Object Oriented Programming with Java", "Human-Computer Interaction\t" });
             cmbmodule3.Location = new Point(120, 269);
             cmbmodule3.Name = "cmbmodule3";
             cmbmodule3.Size = new Size(160, 23);
@@ -185,7 +185,7 @@
             // cmbmodule4
             // 
             cmbmodule4.FormattingEnabled = true;
-            cmbmodule4.Items.AddRange(new object[] { "", "Algorithms and Complexity", "Web Based Application Development" });
+            cmbmodule4.Items.AddRange(new object[] { "Algorithms and Complexity", "Web Based Application Development" });
             cmbmodule4.Location = new Point(120, 318);
             cmbmodule4.Name = "cmbmodule4";
             cmbmodule4.Size = new Size(160, 23);
@@ -199,7 +199,7 @@
             BackColor = Color.White;
             ClientSize = new Size(292, 450);
             Controls.Add(lblExit);
-            Controls.Add(button3);
+            Controls.Add(btnsave);
             Controls.Add(cmbmodule4);
             Controls.Add(cmbmodule3);
             Controls.Add(cmbmodule2);
@@ -215,6 +215,7 @@
             Name = "mycouses";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "mycouses";
+            Load += mycouses_Load;
             ResumeLayout(false);
         }
 
@@ -227,7 +228,7 @@
         private Label label6;
         private ComboBox comdgree;
         private Label label4;
-        private Button button3;
+        private Button btnsave;
         private Label lblExit;
         private ComboBox cmbmodule1;
         private ComboBox cmbmodule2;

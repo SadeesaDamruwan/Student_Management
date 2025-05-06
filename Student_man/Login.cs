@@ -8,6 +8,7 @@ namespace Student_man
     {
         public string username;
         public string password;
+        public static string LoggedInUserName;
         public Login()
         {
             InitializeComponent();
@@ -45,35 +46,65 @@ namespace Student_man
 
         private void button3_Click(object sender, EventArgs e)
         {
-            username = txtUsername.Text;
+            // Get username and password from text fields
+            username = txtUsername.Text.Trim();
             password = txtpass.Text;
 
-            String conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
-            MySqlConnection con = new MySqlConnection(conString);
-            con.Open();
-            string Query = "select Password from lms.Register where UserName = '" + username + "'";
-            MySqlCommand cmd = new MySqlCommand(Query, con);
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-
-            if (reader.Read())
+            // Validate input
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                if (reader.GetString(0) == password)
-                {
-                    MessageBox.Show("Login Successful");
-                    this.Hide();
-                    Createacc main = new Createacc();
-                    main.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Username or Password does not exist");
-                }
+                MessageBox.Show("Please enter both username and password");
+                return;
             }
 
-            else
+            String conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+
+            try
             {
-                MessageBox.Show("Username or Password does not exist");
+                using (MySqlConnection con = new MySqlConnection(conString))
+                {
+                    con.Open();
+
+                    // Use parameterized query to prevent SQL injection
+                    string Query = "SELECT Password FROM lms.Register WHERE UserName = @UserName";
+
+                    using (MySqlCommand cmd = new MySqlCommand(Query, con))
+                    {
+                        // Add parameter to prevent SQL injection
+                        cmd.Parameters.AddWithValue("@UserName", username);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string storedPassword = reader.GetString(0);
+
+                                if (storedPassword == password)
+                                {
+                                    // Set the static LoggedInUserName variable for use in other forms
+                                    LoggedInUserName = username;
+
+                                    MessageBox.Show("Login Successful");
+                                    this.Hide();
+                                    Createacc main = new Createacc();
+                                    main.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Username or Password is incorrect");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Username does not exist");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
 
 
