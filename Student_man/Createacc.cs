@@ -36,5 +36,20 @@ namespace Student_man
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            attendance main = new attendance();
+            main.Show();
+        }
+
+        private void btntime_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Timetabel main = new Timetabel();
+            main.Show();
+
+        }
     }
 }

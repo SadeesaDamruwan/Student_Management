@@ -28,147 +28,221 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            btncouse = new Button();
-            btntime = new Button();
-            button3 = new Button();
+            panel1 = new Panel();
+            lblTitle = new Label();
             lblExit = new Label();
+            btnCourses = new Button();
+            btnAttendance = new Button();
+            btnTimetable = new Button();
+            btnLogout = new Button();
+            panel2 = new Panel();
+            pictureBox1 = new PictureBox();
+            panelDashboard = new Panel();
+            label2 = new Label();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panelDashboard.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // panel1
             // 
-            label1.BackColor = Color.White;
-            label1.Font = new Font("Bahnschrift SemiBold SemiConden", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(0, 117, 214);
-            label1.Location = new Point(52, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(166, 47);
-            label1.TabIndex = 0;
-            label1.Text = "My WorkSpace";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            panel1.BackColor = Color.FromArgb(41, 128, 185);
+            panel1.Controls.Add(lblTitle);
+            panel1.Controls.Add(lblExit);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4, 3, 4, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1050, 58);
+            panel1.TabIndex = 0;
             // 
-            // label2
+            // lblTitle
             // 
-            label2.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(0, 117, 214);
-            label2.Location = new Point(3, 67);
-            label2.Name = "label2";
-            label2.Size = new Size(109, 35);
-            label2.TabIndex = 0;
-            label2.Text = "Welcome";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.images__2_1;
-            pictureBox1.Location = new Point(29, 126);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(40, 40);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.istockphoto_1261718311_612x6121;
-            pictureBox2.Location = new Point(29, 208);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 40);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // btncouse
-            // 
-            btncouse.BackColor = Color.FromArgb(0, 117, 214);
-            btncouse.FlatStyle = FlatStyle.Flat;
-            btncouse.Font = new Font("Bahnschrift SemiBold SemiConden", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btncouse.ForeColor = Color.White;
-            btncouse.Location = new Point(122, 126);
-            btncouse.Name = "btncouse";
-            btncouse.Size = new Size(153, 40);
-            btncouse.TabIndex = 2;
-            btncouse.Text = "My Couses";
-            btncouse.UseVisualStyleBackColor = false;
-            btncouse.Click += btncouse_Click;
-            // 
-            // btntime
-            // 
-            btntime.BackColor = Color.FromArgb(0, 117, 214);
-            btntime.FlatStyle = FlatStyle.Flat;
-            btntime.Font = new Font("Bahnschrift SemiBold SemiConden", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btntime.ForeColor = Color.White;
-            btntime.Location = new Point(122, 208);
-            btntime.Name = "btntime";
-            btntime.Size = new Size(153, 40);
-            btntime.TabIndex = 2;
-            btntime.Text = "My TimeTabel";
-            btntime.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(0, 117, 214);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Bahnschrift SemiBold SemiConden", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(29, 381);
-            button3.Name = "button3";
-            button3.Size = new Size(246, 40);
-            button3.TabIndex = 2;
-            button3.Text = "Log Out";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(14, 10);
+            lblTitle.Margin = new Padding(4, 0, 4, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(274, 25);
+            lblTitle.TabIndex = 1;
+            lblTitle.Text = "Student Management System";
             // 
             // lblExit
             // 
-            lblExit.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
-            lblExit.ForeColor = Color.FromArgb(0, 117, 214);
-            lblExit.ImeMode = ImeMode.NoControl;
-            lblExit.Location = new Point(108, 424);
+            lblExit.AutoSize = true;
+            lblExit.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblExit.ForeColor = Color.White;
+            lblExit.Location = new Point(1007, 10);
+            lblExit.Margin = new Padding(4, 0, 4, 0);
             lblExit.Name = "lblExit";
-            lblExit.Size = new Size(83, 21);
-            lblExit.TabIndex = 11;
-            lblExit.Text = "Exit";
-            lblExit.TextAlign = ContentAlignment.MiddleCenter;
+            lblExit.Size = new Size(27, 25);
+            lblExit.TabIndex = 0;
+            lblExit.Text = "X";
             lblExit.Click += lblExit_Click;
+            // 
+            // btnCourses
+            // 
+            btnCourses.BackColor = Color.FromArgb(52, 152, 219);
+            btnCourses.FlatAppearance.BorderSize = 0;
+            btnCourses.FlatStyle = FlatStyle.Flat;
+            btnCourses.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCourses.ForeColor = Color.White;
+            btnCourses.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCourses.Location = new Point(0, 173);
+            btnCourses.Margin = new Padding(4, 3, 4, 3);
+            btnCourses.Name = "btnCourses";
+            btnCourses.Padding = new Padding(12, 0, 0, 0);
+            btnCourses.Size = new Size(233, 69);
+            btnCourses.TabIndex = 1;
+            btnCourses.Text = "  My Courses";
+            btnCourses.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCourses.UseVisualStyleBackColor = false;
+            btnCourses.Click += btncouse_Click;
+            // 
+            // btnAttendance
+            // 
+            btnAttendance.BackColor = Color.FromArgb(52, 152, 219);
+            btnAttendance.FlatAppearance.BorderSize = 0;
+            btnAttendance.FlatStyle = FlatStyle.Flat;
+            btnAttendance.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAttendance.ForeColor = Color.White;
+            btnAttendance.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAttendance.Location = new Point(0, 242);
+            btnAttendance.Margin = new Padding(4, 3, 4, 3);
+            btnAttendance.Name = "btnAttendance";
+            btnAttendance.Padding = new Padding(12, 0, 0, 0);
+            btnAttendance.Size = new Size(233, 69);
+            btnAttendance.TabIndex = 2;
+            btnAttendance.Text = "  Attendance";
+            btnAttendance.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnAttendance.UseVisualStyleBackColor = false;
+            btnAttendance.Click += button1_Click;
+            // 
+            // btnTimetable
+            // 
+            btnTimetable.BackColor = Color.FromArgb(52, 152, 219);
+            btnTimetable.FlatAppearance.BorderSize = 0;
+            btnTimetable.FlatStyle = FlatStyle.Flat;
+            btnTimetable.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTimetable.ForeColor = Color.White;
+            btnTimetable.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTimetable.Location = new Point(0, 312);
+            btnTimetable.Margin = new Padding(4, 3, 4, 3);
+            btnTimetable.Name = "btnTimetable";
+            btnTimetable.Padding = new Padding(12, 0, 0, 0);
+            btnTimetable.Size = new Size(233, 69);
+            btnTimetable.TabIndex = 3;
+            btnTimetable.Text = "  Timetable";
+            btnTimetable.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnTimetable.UseVisualStyleBackColor = false;
+            btnTimetable.Click += btntime_Click;
+            // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = Color.FromArgb(230, 126, 34);
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogout.Location = new Point(0, 450);
+            btnLogout.Margin = new Padding(4, 3, 4, 3);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Padding = new Padding(12, 0, 0, 0);
+            btnLogout.Size = new Size(233, 69);
+            btnLogout.TabIndex = 4;
+            btnLogout.Text = "  Logout";
+            btnLogout.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += button3_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(41, 128, 185);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(btnLogout);
+            panel2.Controls.Add(btnTimetable);
+            panel2.Controls.Add(btnAttendance);
+            panel2.Controls.Add(btnCourses);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 58);
+            panel2.Margin = new Padding(4, 3, 4, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(233, 634);
+            panel2.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._4196591;
+            pictureBox1.Location = new Point(58, 17);
+            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(105, 89);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
+            // panelDashboard
+            // 
+            panelDashboard.BackColor = Color.FromArgb(236, 240, 241);
+            panelDashboard.Controls.Add(label2);
+            panelDashboard.Dock = DockStyle.Fill;
+            panelDashboard.Location = new Point(233, 58);
+            panelDashboard.Margin = new Padding(4, 3, 4, 3);
+            panelDashboard.Name = "panelDashboard";
+            panelDashboard.Size = new Size(817, 634);
+            panelDashboard.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(41, 128, 185);
+            label2.Location = new Point(246, 200);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(343, 135);
+            label2.TabIndex = 0;
+            label2.Text = "Welcome to \r\nStudent Management\r\nSystem";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Createacc
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(308, 489);
-            Controls.Add(lblExit);
-            Controls.Add(button3);
-            Controls.Add(btntime);
-            Controls.Add(btncouse);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            ClientSize = new Size(1050, 692);
+            Controls.Add(panelDashboard);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Createacc";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Createacc";
+            Text = "Student Management System";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panelDashboard.ResumeLayout(false);
+            panelDashboard.PerformLayout();
             ResumeLayout(false);
+
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Button btncouse;
-        private Button btntime;
-        private Button button3;
-        private Label lblExit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblExit;
+        private System.Windows.Forms.Button btnCourses;
+        private System.Windows.Forms.Button btnAttendance;
+        private System.Windows.Forms.Button btnTimetable;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelDashboard;
+        private System.Windows.Forms.Label label2;
     }
 }
