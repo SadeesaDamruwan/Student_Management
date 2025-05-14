@@ -106,5 +106,10 @@ namespace Student_man
             Createacc main = new Createacc();
             main.Show();
         }
+
+        private void Timetabel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace Student_man
         private void DisplayWelcomeMessage()
         {
 
-            string conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+            string conString = "server=localhost;user id=root;password=Asdf@123;database=lms";
 
 
             using (MySqlConnection con = new MySqlConnection(conString))
@@ -84,12 +84,12 @@ namespace Student_man
                 }
 
             }
-               
+
         }
 
         private void PageLoad(object sender, EventArgs e)
         {
-           
+
         }
 
         private void comdgree_SelectedIndexChanged(object sender, EventArgs e)
@@ -110,7 +110,7 @@ namespace Student_man
                 return;
             }
 
-            string conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+            string conString = "server=localhost;user id=root;password=Asdf@123;database=lms";
 
 
             using (MySqlConnection con = new MySqlConnection(conString))
@@ -202,7 +202,7 @@ namespace Student_man
 
         private void LoadUserCourseData()
         {
-            string conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+            string conString = "server=localhost;user id=root;password=Asdf@123;database=lms";
 
 
             using (MySqlConnection con = new MySqlConnection(conString))
@@ -257,12 +257,17 @@ namespace Student_man
 
         private void lblWelcome_Click(object sender, EventArgs e)
         {
-            
-             
+
+
         }
-        
+
 
         private void panelCourseInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -13,7 +13,7 @@ namespace Student_man
 {
     public partial class attendance : Form
     {
-        private string conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+        private string conString = "server=localhost;user id=root;password=Asdf@123;database=lms";
 
         public attendance()
         {

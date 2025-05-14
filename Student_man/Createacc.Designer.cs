@@ -52,9 +52,9 @@
             panel1.Controls.Add(lblExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 3, 4, 3);
+            panel1.Margin = new Padding(5, 4, 5, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1050, 58);
+            panel1.Size = new Size(1200, 77);
             panel1.TabIndex = 0;
             // 
             // lblTitle
@@ -62,22 +62,23 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(14, 10);
-            lblTitle.Margin = new Padding(4, 0, 4, 0);
+            lblTitle.Location = new Point(16, 13);
+            lblTitle.Margin = new Padding(5, 0, 5, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(274, 25);
+            lblTitle.Size = new Size(347, 32);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Student Management System";
+            lblTitle.Click += lblTitle_Click;
             // 
             // lblExit
             // 
             lblExit.AutoSize = true;
             lblExit.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblExit.ForeColor = Color.White;
-            lblExit.Location = new Point(1007, 10);
-            lblExit.Margin = new Padding(4, 0, 4, 0);
+            lblExit.Location = new Point(1151, 13);
+            lblExit.Margin = new Padding(5, 0, 5, 0);
             lblExit.Name = "lblExit";
-            lblExit.Size = new Size(27, 25);
+            lblExit.Size = new Size(33, 31);
             lblExit.TabIndex = 0;
             lblExit.Text = "X";
             lblExit.Click += lblExit_Click;
@@ -90,11 +91,11 @@
             btnCourses.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCourses.ForeColor = Color.White;
             btnCourses.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCourses.Location = new Point(0, 173);
-            btnCourses.Margin = new Padding(4, 3, 4, 3);
+            btnCourses.Location = new Point(0, 231);
+            btnCourses.Margin = new Padding(5, 4, 5, 4);
             btnCourses.Name = "btnCourses";
-            btnCourses.Padding = new Padding(12, 0, 0, 0);
-            btnCourses.Size = new Size(233, 69);
+            btnCourses.Padding = new Padding(14, 0, 0, 0);
+            btnCourses.Size = new Size(266, 92);
             btnCourses.TabIndex = 1;
             btnCourses.Text = "  My Courses";
             btnCourses.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -109,11 +110,11 @@
             btnAttendance.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAttendance.ForeColor = Color.White;
             btnAttendance.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAttendance.Location = new Point(0, 242);
-            btnAttendance.Margin = new Padding(4, 3, 4, 3);
+            btnAttendance.Location = new Point(0, 323);
+            btnAttendance.Margin = new Padding(5, 4, 5, 4);
             btnAttendance.Name = "btnAttendance";
-            btnAttendance.Padding = new Padding(12, 0, 0, 0);
-            btnAttendance.Size = new Size(233, 69);
+            btnAttendance.Padding = new Padding(14, 0, 0, 0);
+            btnAttendance.Size = new Size(266, 92);
             btnAttendance.TabIndex = 2;
             btnAttendance.Text = "  Attendance";
             btnAttendance.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -128,11 +129,11 @@
             btnTimetable.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnTimetable.ForeColor = Color.White;
             btnTimetable.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTimetable.Location = new Point(0, 312);
-            btnTimetable.Margin = new Padding(4, 3, 4, 3);
+            btnTimetable.Location = new Point(0, 416);
+            btnTimetable.Margin = new Padding(5, 4, 5, 4);
             btnTimetable.Name = "btnTimetable";
-            btnTimetable.Padding = new Padding(12, 0, 0, 0);
-            btnTimetable.Size = new Size(233, 69);
+            btnTimetable.Padding = new Padding(14, 0, 0, 0);
+            btnTimetable.Size = new Size(266, 92);
             btnTimetable.TabIndex = 3;
             btnTimetable.Text = "  Timetable";
             btnTimetable.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -147,11 +148,11 @@
             btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogout.ForeColor = Color.White;
             btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogout.Location = new Point(0, 450);
-            btnLogout.Margin = new Padding(4, 3, 4, 3);
+            btnLogout.Location = new Point(0, 600);
+            btnLogout.Margin = new Padding(5, 4, 5, 4);
             btnLogout.Name = "btnLogout";
-            btnLogout.Padding = new Padding(12, 0, 0, 0);
-            btnLogout.Size = new Size(233, 69);
+            btnLogout.Padding = new Padding(14, 0, 0, 0);
+            btnLogout.Size = new Size(266, 92);
             btnLogout.TabIndex = 4;
             btnLogout.Text = "  Logout";
             btnLogout.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -167,19 +168,19 @@
             panel2.Controls.Add(btnAttendance);
             panel2.Controls.Add(btnCourses);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 58);
-            panel2.Margin = new Padding(4, 3, 4, 3);
+            panel2.Location = new Point(0, 77);
+            panel2.Margin = new Padding(5, 4, 5, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(233, 634);
+            panel2.Size = new Size(266, 846);
             panel2.TabIndex = 1;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._4196591;
-            pictureBox1.Location = new Point(58, 17);
-            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Location = new Point(66, 23);
+            pictureBox1.Margin = new Padding(5, 4, 5, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(105, 89);
+            pictureBox1.Size = new Size(120, 119);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -189,10 +190,10 @@
             panelDashboard.BackColor = Color.FromArgb(236, 240, 241);
             panelDashboard.Controls.Add(label2);
             panelDashboard.Dock = DockStyle.Fill;
-            panelDashboard.Location = new Point(233, 58);
-            panelDashboard.Margin = new Padding(4, 3, 4, 3);
+            panelDashboard.Location = new Point(266, 77);
+            panelDashboard.Margin = new Padding(5, 4, 5, 4);
             panelDashboard.Name = "panelDashboard";
-            panelDashboard.Size = new Size(817, 634);
+            panelDashboard.Size = new Size(934, 846);
             panelDashboard.TabIndex = 2;
             // 
             // label2
@@ -200,24 +201,24 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(41, 128, 185);
-            label2.Location = new Point(246, 200);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(281, 267);
+            label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(343, 135);
+            label2.Size = new Size(434, 162);
             label2.TabIndex = 0;
             label2.Text = "Welcome to \r\nStudent Management\r\nSystem";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Createacc
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1050, 692);
+            ClientSize = new Size(1200, 923);
             Controls.Add(panelDashboard);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(5, 4, 5, 4);
             Name = "Createacc";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Student Management System";
@@ -228,7 +229,6 @@
             panelDashboard.ResumeLayout(false);
             panelDashboard.PerformLayout();
             ResumeLayout(false);
-
         }
 
         #endregion

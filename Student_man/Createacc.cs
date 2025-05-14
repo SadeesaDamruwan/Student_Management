@@ -51,5 +51,10 @@ namespace Student_man
             main.Show();
 
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

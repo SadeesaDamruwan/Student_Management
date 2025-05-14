@@ -39,9 +39,9 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Bahnschrift Condensed", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(0, 117, 214);
-            label1.Location = new Point(69, 56);
+            label1.Location = new Point(79, 75);
             label1.Name = "label1";
-            label1.Size = new Size(134, 32);
+            label1.Size = new Size(153, 43);
             label1.TabIndex = 0;
             label1.Text = "Login ";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -51,9 +51,10 @@
             btnuse.BackColor = Color.White;
             btnuse.Font = new Font("Bahnschrift SemiBold Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnuse.ForeColor = Color.FromArgb(0, 117, 214);
-            btnuse.Location = new Point(26, 142);
+            btnuse.Location = new Point(30, 189);
+            btnuse.Margin = new Padding(3, 4, 3, 4);
             btnuse.Name = "btnuse";
-            btnuse.Size = new Size(225, 48);
+            btnuse.Size = new Size(257, 64);
             btnuse.TabIndex = 1;
             btnuse.Text = "User";
             btnuse.UseVisualStyleBackColor = false;
@@ -63,9 +64,10 @@
             // 
             btnad.Font = new Font("Bahnschrift SemiBold Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnad.ForeColor = Color.FromArgb(0, 117, 214);
-            btnad.Location = new Point(26, 228);
+            btnad.Location = new Point(30, 304);
+            btnad.Margin = new Padding(3, 4, 3, 4);
             btnad.Name = "btnad";
-            btnad.Size = new Size(225, 48);
+            btnad.Size = new Size(257, 64);
             btnad.TabIndex = 1;
             btnad.Text = "Lec";
             btnad.UseVisualStyleBackColor = true;
@@ -75,9 +77,10 @@
             // 
             btnstaff.Font = new Font("Bahnschrift SemiBold Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnstaff.ForeColor = Color.FromArgb(0, 117, 214);
-            btnstaff.Location = new Point(26, 312);
+            btnstaff.Location = new Point(30, 416);
+            btnstaff.Margin = new Padding(3, 4, 3, 4);
             btnstaff.Name = "btnstaff";
-            btnstaff.Size = new Size(225, 48);
+            btnstaff.Size = new Size(257, 64);
             btnstaff.TabIndex = 1;
             btnstaff.Text = "Staff";
             btnstaff.UseVisualStyleBackColor = true;
@@ -85,17 +88,19 @@
             // 
             // UserType
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(292, 450);
+            ClientSize = new Size(334, 600);
             Controls.Add(btnstaff);
             Controls.Add(btnad);
             Controls.Add(btnuse);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "UserType";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserType";
+            Load += UserType_Load;
             ResumeLayout(false);
         }
 

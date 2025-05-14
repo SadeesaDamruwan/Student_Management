@@ -61,7 +61,6 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = Properties.Resources._4cc88e8068fb873ea050ebc4e94eafed850f2409__2_;
             resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
@@ -150,7 +149,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         #endregion

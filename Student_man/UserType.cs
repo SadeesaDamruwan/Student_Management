@@ -37,5 +37,10 @@ namespace Student_man
             Login main = new Login();
             main.Show();
         }
+
+        private void UserType_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

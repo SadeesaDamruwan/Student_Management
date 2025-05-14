@@ -59,7 +59,7 @@ namespace Student_man
             }
             else
             {
-                String conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+                String conString = "server=localhost;user id=root;password=Asdf@123;database=lms";
                 MySqlConnection con = new MySqlConnection(conString);
                 con.Open();
                 string Query = "INSERT INTO lms.Register (UserName, Password, ConPassword ) VALUES ('" + txtUsername.Text + "','" + txtpass.Text + "','" + txtpasscon.Text + "')";
@@ -73,7 +73,7 @@ namespace Student_man
         }
         public void getData()
         {
-            String conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+            String conString = "server=localhost;user id=root;password=Asdf@123;database=lms";
             MySqlConnection con = new MySqlConnection(conString);
             con.Open();
             string Query = "select Password from lms.Register where UserName = ''";

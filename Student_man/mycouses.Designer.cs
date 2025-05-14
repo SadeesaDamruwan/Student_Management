@@ -62,17 +62,18 @@
             panel1.Controls.Add(lblExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 3, 4, 3);
+            panel1.Margin = new Padding(5, 4, 5, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1050, 92);
+            panel1.Size = new Size(1200, 123);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(14, 14);
-            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Location = new Point(16, 19);
+            pictureBox1.Margin = new Padding(5, 4, 5, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(64, 63);
+            pictureBox1.Size = new Size(73, 84);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -82,10 +83,10 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(85, 28);
-            lblTitle.Margin = new Padding(4, 0, 4, 0);
+            lblTitle.Location = new Point(97, 37);
+            lblTitle.Margin = new Padding(5, 0, 5, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(255, 31);
+            lblTitle.Size = new Size(316, 39);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Course Enrollment";
             // 
@@ -94,10 +95,10 @@
             lblExit.AutoSize = true;
             lblExit.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblExit.ForeColor = Color.White;
-            lblExit.Location = new Point(1015, 10);
-            lblExit.Margin = new Padding(4, 0, 4, 0);
+            lblExit.Location = new Point(1160, 13);
+            lblExit.Margin = new Padding(5, 0, 5, 0);
             lblExit.Name = "lblExit";
-            lblExit.Size = new Size(27, 25);
+            lblExit.Size = new Size(33, 31);
             lblExit.TabIndex = 0;
             lblExit.Text = "X";
             lblExit.Click += lblExit_Click;
@@ -110,10 +111,10 @@
             panelMain.Controls.Add(btnsave);
             panelMain.Controls.Add(btnBack);
             panelMain.Dock = DockStyle.Fill;
-            panelMain.Location = new Point(0, 92);
-            panelMain.Margin = new Padding(4, 3, 4, 3);
+            panelMain.Location = new Point(0, 123);
+            panelMain.Margin = new Padding(5, 4, 5, 4);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1050, 600);
+            panelMain.Size = new Size(1200, 800);
             panelMain.TabIndex = 1;
             panelMain.Paint += panelMain_Paint;
             // 
@@ -122,10 +123,10 @@
             lblWelcome.AutoSize = true;
             lblWelcome.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblWelcome.ForeColor = Color.FromArgb(64, 64, 64);
-            lblWelcome.Location = new Point(54, 46);
-            lblWelcome.Margin = new Padding(4, 0, 4, 0);
+            lblWelcome.Location = new Point(62, 61);
+            lblWelcome.Margin = new Padding(5, 0, 5, 0);
             lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(101, 24);
+            lblWelcome.Size = new Size(127, 29);
             lblWelcome.TabIndex = 8;
             lblWelcome.Text = "Welcome, ";
             lblWelcome.Click += lblWelcome_Click;
@@ -145,10 +146,10 @@
             panelCourseInfo.Controls.Add(cmbmodule2);
             panelCourseInfo.Controls.Add(cmbmodule3);
             panelCourseInfo.Controls.Add(cmbmodule4);
-            panelCourseInfo.Location = new Point(58, 115);
-            panelCourseInfo.Margin = new Padding(4, 3, 4, 3);
+            panelCourseInfo.Location = new Point(66, 153);
+            panelCourseInfo.Margin = new Padding(5, 4, 5, 4);
             panelCourseInfo.Name = "panelCourseInfo";
-            panelCourseInfo.Size = new Size(933, 369);
+            panelCourseInfo.Size = new Size(1066, 491);
             panelCourseInfo.TabIndex = 6;
             panelCourseInfo.Paint += panelCourseInfo_Paint;
             // 
@@ -157,10 +158,10 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(41, 128, 185);
-            label6.Location = new Point(27, 17);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(31, 23);
+            label6.Margin = new Padding(5, 0, 5, 0);
             label6.Name = "label6";
-            label6.Size = new Size(293, 20);
+            label6.Size = new Size(357, 25);
             label6.TabIndex = 12;
             label6.Text = "SELECT YOUR COURSE DETAILS";
             // 
@@ -168,10 +169,10 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(27, 300);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(31, 400);
+            label5.Margin = new Padding(5, 0, 5, 0);
             label5.Name = "label5";
-            label5.Size = new Size(73, 18);
+            label5.Size = new Size(94, 24);
             label5.TabIndex = 11;
             label5.Text = "Module 4:";
             // 
@@ -179,10 +180,10 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(27, 242);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(31, 323);
+            label4.Margin = new Padding(5, 0, 5, 0);
             label4.Name = "label4";
-            label4.Size = new Size(73, 18);
+            label4.Size = new Size(94, 24);
             label4.TabIndex = 10;
             label4.Text = "Module 3:";
             // 
@@ -190,10 +191,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(27, 185);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(31, 247);
+            label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
-            label3.Size = new Size(73, 18);
+            label3.Size = new Size(94, 24);
             label3.TabIndex = 9;
             label3.Text = "Module 2:";
             // 
@@ -201,10 +202,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(27, 127);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(31, 169);
+            label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(73, 18);
+            label2.Size = new Size(94, 24);
             label2.TabIndex = 8;
             label2.Text = "Module 1:";
             // 
@@ -212,10 +213,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(27, 69);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(31, 92);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(113, 18);
+            label1.Size = new Size(144, 24);
             label1.TabIndex = 7;
             label1.Text = "Degree Course:";
             // 
@@ -224,10 +225,10 @@
             comdgree.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comdgree.FormattingEnabled = true;
             comdgree.Items.AddRange(new object[] { "Software Engineering", "Computer Science", "Information Technology", "Cyber Security", "Data Science", "Artificial Intelligence" });
-            comdgree.Location = new Point(198, 66);
-            comdgree.Margin = new Padding(4, 3, 4, 3);
+            comdgree.Location = new Point(226, 88);
+            comdgree.Margin = new Padding(5, 4, 5, 4);
             comdgree.Name = "comdgree";
-            comdgree.Size = new Size(699, 26);
+            comdgree.Size = new Size(798, 32);
             comdgree.TabIndex = 1;
             comdgree.SelectedIndexChanged += comdgree_SelectedIndexChanged;
             // 
@@ -236,10 +237,10 @@
             cmbmodule1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbmodule1.FormattingEnabled = true;
             cmbmodule1.Items.AddRange(new object[] { "Programming Fundamentals", "Object Oriented Programming", "Database Systems", "Web Development", "Mobile Application Development", "Networking Fundamentals", "Operating Systems", "Software Project Management" });
-            cmbmodule1.Location = new Point(198, 123);
-            cmbmodule1.Margin = new Padding(4, 3, 4, 3);
+            cmbmodule1.Location = new Point(226, 164);
+            cmbmodule1.Margin = new Padding(5, 4, 5, 4);
             cmbmodule1.Name = "cmbmodule1";
-            cmbmodule1.Size = new Size(699, 26);
+            cmbmodule1.Size = new Size(798, 32);
             cmbmodule1.TabIndex = 2;
             // 
             // cmbmodule2
@@ -247,10 +248,10 @@
             cmbmodule2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbmodule2.FormattingEnabled = true;
             cmbmodule2.Items.AddRange(new object[] { "Programming Fundamentals", "Object Oriented Programming", "Database Systems", "Web Development", "Mobile Application Development", "Networking Fundamentals", "Operating Systems", "Software Project Management" });
-            cmbmodule2.Location = new Point(198, 181);
-            cmbmodule2.Margin = new Padding(4, 3, 4, 3);
+            cmbmodule2.Location = new Point(226, 241);
+            cmbmodule2.Margin = new Padding(5, 4, 5, 4);
             cmbmodule2.Name = "cmbmodule2";
-            cmbmodule2.Size = new Size(699, 26);
+            cmbmodule2.Size = new Size(798, 32);
             cmbmodule2.TabIndex = 3;
             // 
             // cmbmodule3
@@ -258,10 +259,10 @@
             cmbmodule3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbmodule3.FormattingEnabled = true;
             cmbmodule3.Items.AddRange(new object[] { "Programming Fundamentals", "Object Oriented Programming", "Database Systems", "Web Development", "Mobile Application Development", "Networking Fundamentals", "Operating Systems", "Software Project Management" });
-            cmbmodule3.Location = new Point(198, 239);
-            cmbmodule3.Margin = new Padding(4, 3, 4, 3);
+            cmbmodule3.Location = new Point(226, 319);
+            cmbmodule3.Margin = new Padding(5, 4, 5, 4);
             cmbmodule3.Name = "cmbmodule3";
-            cmbmodule3.Size = new Size(699, 26);
+            cmbmodule3.Size = new Size(798, 32);
             cmbmodule3.TabIndex = 4;
             // 
             // cmbmodule4
@@ -269,10 +270,10 @@
             cmbmodule4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbmodule4.FormattingEnabled = true;
             cmbmodule4.Items.AddRange(new object[] { "Programming Fundamentals", "Object Oriented Programming", "Database Systems", "Web Development", "Mobile Application Development", "Networking Fundamentals", "Operating Systems", "Software Project Management" });
-            cmbmodule4.Location = new Point(198, 297);
-            cmbmodule4.Margin = new Padding(4, 3, 4, 3);
+            cmbmodule4.Location = new Point(226, 396);
+            cmbmodule4.Margin = new Padding(5, 4, 5, 4);
             cmbmodule4.Name = "cmbmodule4";
-            cmbmodule4.Size = new Size(699, 26);
+            cmbmodule4.Size = new Size(798, 32);
             cmbmodule4.TabIndex = 5;
             // 
             // btnsave
@@ -282,10 +283,10 @@
             btnsave.FlatStyle = FlatStyle.Flat;
             btnsave.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnsave.ForeColor = Color.White;
-            btnsave.Location = new Point(811, 519);
-            btnsave.Margin = new Padding(4, 3, 4, 3);
+            btnsave.Location = new Point(927, 692);
+            btnsave.Margin = new Padding(5, 4, 5, 4);
             btnsave.Name = "btnsave";
-            btnsave.Size = new Size(181, 52);
+            btnsave.Size = new Size(207, 69);
             btnsave.TabIndex = 6;
             btnsave.Text = "Save Enrollment";
             btnsave.UseVisualStyleBackColor = false;
@@ -298,10 +299,10 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(58, 519);
-            btnBack.Margin = new Padding(4, 3, 4, 3);
+            btnBack.Location = new Point(66, 692);
+            btnBack.Margin = new Padding(5, 4, 5, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(181, 52);
+            btnBack.Size = new Size(207, 69);
             btnBack.TabIndex = 7;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
@@ -309,13 +310,13 @@
             // 
             // mycouses
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1050, 692);
+            ClientSize = new Size(1200, 923);
             Controls.Add(panelMain);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(5, 4, 5, 4);
             Name = "mycouses";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "My Courses";
@@ -328,7 +329,6 @@
             panelCourseInfo.ResumeLayout(false);
             panelCourseInfo.PerformLayout();
             ResumeLayout(false);
-
         }
 
         #endregion

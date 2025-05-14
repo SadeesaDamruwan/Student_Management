@@ -57,7 +57,7 @@ namespace Student_man
                 return;
             }
 
-            String conString = "server=localhost;user id=root;password=Sadisa123;database=lms";
+            String conString = "server=localhost;user id=root;password=Asdf@123;database=lms";
 
             try
             {
